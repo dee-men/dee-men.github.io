@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Deepak Menghani — Machine Learning Engineer and AI systems builder.">
+  <title>Deepak Menghani | Machine Learning Engineer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --text: #edf2fb;
+      --muted: #aab5c7;
+      --accent: #8db5ff;
+      --background: #111827;
+      --border: rgba(226, 232, 240, 0.16);
+      --tag-background: rgba(59, 130, 246, 0.18);
+      --tag-text: #b6d0ff;
+      --toggle-background: rgba(30, 41, 59, 0.9);
+    }
+
+    [data-theme="light"] {
+      color-scheme: light;
+      --text: #172033;
+      --muted: #667085;
+      --accent: #2563eb;
+      --background: #f6f8fb;
+      --border: rgba(23, 32, 51, 0.14);
+      --tag-background: #eff6ff;
+      --tag-text: #1d4ed8;
+      --toggle-background: rgba(255, 255, 255, 0.8);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 0%, rgba(37, 99, 235, 0.1), transparent 32rem),
+        var(--background);
+      transition: color 180ms ease, background 180ms ease;
+    }
+
+    main {
+      width: min(860px, 88%);
+      margin: 0 auto;
+      padding: 42px 0 80px;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 48px;
+    }
+
+    .theme-toggle {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 13px;
+      color: var(--text);
+      background: var(--toggle-background);
+      font: inherit;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: border-color 180ms ease, background 180ms ease;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+    }
+
+    header {
+      padding-bottom: 54px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+      align-items: center;
+      gap: clamp(34px, 7vw, 82px);
+    }
+
+    .portrait {
+      display: block;
+      width: 100%;
+      max-width: 260px;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      object-position: center;
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    .hero-copy h1 { margin-bottom: 8px; }
+
+    section {
+      padding: 44px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 8px; font-size: clamp(2.2rem, 6vw, 4rem); letter-spacing: -0.04em; }
+    h2 { margin-bottom: 22px; font-size: 1.15rem; }
+    h3 { margin-bottom: 2px; font-size: 1rem; }
+    .intro, .muted, .date { color: var(--muted); }
+    .intro { font-size: 1.15rem; }
+    .links { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 22px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .role { margin-bottom: 22px; }
+    .role:last-child { margin-bottom: 0; }
+    .role-heading { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+    .date { white-space: nowrap; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; }
+    .tag-list li { padding: 6px 11px; border-radius: 999px; background: var(--tag-background); color: var(--tag-text); font-size: 0.9rem; }
+
+    @media (max-width: 600px) {
+      main { padding: 24px 0 52px; }
+      .toolbar { margin-bottom: 34px; }
+      header { padding-bottom: 38px; }
+      .hero { grid-template-columns: 1fr; gap: 28px; }
+      .portrait { max-width: 220px; }
+      section { padding: 34px 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="toolbar">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode">◐ Dark mode</button>
+    </div>
+
+    <header>
+      <div class="hero">
+        <img class="portrait" src="assets/profile-pic.png" alt="Watercolor portrait of Deepak Menghani at the beach">
+        <div class="hero-copy">
+          <h1>Deepak Menghani</h1>
+          <p class="intro">Machine Learning Engineer · AI Systems Builder</p>
+          <p class="muted">
+            I build intelligent systems that connect machine learning, software,
+            data, and real-world decision-making.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        Machine learning engineer with 10+ years of experience designing and
+        building software and intelligent systems. My work spans AI agents,
+        autonomous systems, document understanding, computer vision, and
+        large-scale data infrastructure.
+      </p>
+    </section>
+
+    <section>
+      <h2>Interests &amp; Projects</h2>
+
+      <div class="role">
+        <h3>AI Agents for Physical Systems</h3>
+        <p class="muted">Exploring systems where AI agents reason about experiments, interact with tools, and improve real-world designs.</p>
+      </div>
+
+      <div class="role">
+        <h3>Machine Learning Systems</h3>
+        <p class="muted">Building reliable infrastructure for data collection, model training, evaluation, and real-time inference.</p>
+      </div>
+
+      <div class="role">
+        <h3>Computer Vision &amp; Multimodal AI</h3>
+        <p class="muted">Interested in teaching machines to understand images, video, documents, and the world around them.</p>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Core Skills</h2>
+      <ul class="tag-list">
+        <li>Python</li>
+        <li>C / C++</li>
+        <li>Go</li>
+        <li>SQL</li>
+        <li>PyTorch</li>
+        <li>TensorFlow</li>
+        <li>LLMs</li>
+        <li>Computer Vision</li>
+        <li>Data Pipelines</li>
+        <li>Model Serving</li>
+        <li>Distributed Training</li>
+        <li>Real-Time Inference</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Stanford University</strong><br>Master of Science</p>
+      <p><strong>IIT Bombay</strong><br>B Tech &amp; MTech</p>
+      <p><strong>CFA Institute</strong><br>All three levels completed</p>
+    </section>
+  </main>
+  <script>
+    const root = document.documentElement;
+    const toggle = document.querySelector('.theme-toggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'light') root.dataset.theme = 'light';
+
+    function updateThemeButton() {
+      const isDark = root.dataset.theme !== 'light';
+      toggle.textContent = isDark ? '☼ Light mode' : '◐ Dark mode';
+      toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+
+    toggle.addEventListener('click', () => {
+      const isDark = root.dataset.theme !== 'light';
+      root.dataset.theme = isDark ? 'light' : 'dark';
+      localStorage.setItem('theme', root.dataset.theme);
+      updateThemeButton();
+    });
+
+    updateThemeButton();
+  </script>
+</body>
+</html>
